@@ -25,7 +25,7 @@ public class GithubSteps {
 	public void user_enters_github_base_url_and_authorization() {
 		
 		given().baseUri("https://api.github.com").basePath("/user/repos")
-		.header("Authorization","Bearer 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");
+		.header("Authorization","Bearer ghp_your key");
 		
 		
 	}
@@ -36,7 +36,7 @@ public class GithubSteps {
 	public void user_executes_http_get_method() {
 		
 		res = given().baseUri("https://api.github.com").basePath("/user/repos")
-				.header("Authorization","Bearer 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")
+				.header("Authorization","Bearer ghp_your key")
 				.when().get();
 	 
 	}
