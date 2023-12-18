@@ -15,7 +15,7 @@ public class Script008GitHubBearerToken {
 		
 		Response res=given().baseUri("https://api.github.com")
 		.basePath("/user/repos")
-		.header("Authorization", "Bearer ghp_user your api key")
+		.header("Authorization", "Bearer ghp_use your api key")
 		.when().get()
 		.then().statusCode(200)
 		.extract().response();
@@ -29,7 +29,7 @@ public class Script008GitHubBearerToken {
 		
 		Response res=given().baseUri("https://api.github.com")
 		.basePath("/repos/malayparikh/Phase-3-RestAssured")
-		.header("Authorization", "Bearer ghp_user your api key")
+		.header("Authorization", "Bearer ghp_use your api key")
 		.when().get()
 		.then().statusCode(200)
 		.extract().response();
